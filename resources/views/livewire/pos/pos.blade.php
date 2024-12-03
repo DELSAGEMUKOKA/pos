@@ -99,7 +99,7 @@
                         </div>
                         <div class="col-md-12 mt-4">
                             <div class="d-flex flex-wrap align-items-center justify-content-center">
-                                <a href="{{ route('customers.create') }}" class="btn btn-primary add-list mx-1">ajouter un client</a>
+                                <a type="button" class="btn btn-primary add-list mx-1" data-toggle="modal" data-target="#modelId">ajouter un client</a>
                                 <button type="submit" class="btn btn-success add-list mx-1">Créer facture</button>
                             </div>
                         </div>
@@ -187,4 +187,26 @@
             </div>
         </div>
     </div>
+    
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                @livewire('customer')
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
