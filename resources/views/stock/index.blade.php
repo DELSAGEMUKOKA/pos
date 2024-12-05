@@ -22,7 +22,7 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Liste des produits du stock</h4>
+                    <h4 class="mb-3">Stock</h4>
                     <p class="mb-0"></p>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">recherche:</label>
+                        <label class="control-label col-sm-3 align-self-center" for="search">search:</label>
                         <div class="input-group col-sm-8">
                             <input type="text" id="search" class="form-control" name="search" placeholder="Search product" value="{{ request('search') }}">
                             <div class="input-group-append">
@@ -64,10 +64,10 @@
                         <tr class="ligth ligth-data">
                             <th>No.</th>
                             <th>Photo</th>
-                            <th>@sortablelink('product_name', 'nom')</th>
-                            <th>@sortablelink('category.name', 'catégorie')</th>
-                            <th>@sortablelink('supplier.name', 'fournisseur')</th>
-                            <th>@sortablelink('selling_price', 'prix')</th>
+                            <th>@sortablelink('product_name', 'name')</th>
+                            <th>@sortablelink('category.name', 'Category')</th>
+                            <th>@sortablelink('supplier.name', 'Supplier')</th>
+                            <th>@sortablelink('selling_price', 'Price')</th>
                             <th>Stock</th>
                         </tr>
                     </thead>
