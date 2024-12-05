@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <div class=" row align-items-center">
                         <div class="form-group col-md-6">
-                            <label>Code Produit</label>
+                            <label>Code Product</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->product_code }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
@@ -37,7 +37,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <div class="header-title">
-                        <h4 class="card-title">Information du produit</h4>
+                        <h4 class="card-title">Information</h4>
                     </div>
                 </div>
 
@@ -55,19 +55,19 @@
 
                     <div class=" row align-items-center">
                         <div class="form-group col-md-12">
-                            <label>Nom produit</label>
+                            <label>Name</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->product_name }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Categorie</label>
+                            <label>Category</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->category->name }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Fournisseur</label>
+                            <label>Supplier</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->supplier->name }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Produit depot</label>
+                            <label>Product Garage</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->product_garage }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
@@ -75,19 +75,19 @@
                             <input type="text" class="form-control bg-white" value="{{  $product->product_store }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Date d'achat</label>
+                            <label>Buying date</label>
                             <input class="form-control bg-white" id="buying_date" value="{{ $product->buying_date }}" readonly/>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Date d'expiration</label>
+                            <label>Expire date</label>
                             <input class="form-control bg-white" id="expire_date" value="{{ $product->expire_date }}" readonly />
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Prix d'achat</label>
+                            <label>Buying  Price</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->buying_price }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Prix de vente</label>
+                            <label>Selling price</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->selling_price }}" readonly>
                         </div>
                     </div>

@@ -13,7 +13,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <div class="header-title">
-                        <h4 class="card-title">Editer Produit</h4>
+                        <h4 class="card-title">Edit Product</h4>
                     </div>
                 </div>
 
@@ -36,7 +36,7 @@
                             <div class="input-group mb-4 col-lg-6">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input @error('product_image') is-invalid @enderror" id="image" name="product_image" accept="image/*" onchange="previewImage();">
-                                    <label class="custom-file-label" for="product_image">Choisir une photo</label>
+                                    <label class="custom-file-label" for="product_image">photo</label>
                                 </div>
                                 @error('product_image')
                                 <div class="invalid-feedback">
@@ -49,7 +49,7 @@
                         <!-- begin: Input Data -->
                         <div class=" row align-items-center">
                             <div class="form-group col-md-12">
-                                <label for="product_name">Nom Produit <span class="text-danger">*</span></label>
+                                <label for="product_name">Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('product_name') is-invalid @enderror" id="product_name" name="product_name" value="{{ old('product_name', $product->product_name) }}" required>
                                 @error('product_name')
                                 <div class="invalid-feedback">
@@ -58,9 +58,9 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="category_id">Categorie <span class="text-danger">*</span></label>
+                                <label for="category_id">Category <span class="text-danger">*</span></label>
                                 <select class="form-control" name="category_id" required>
-                                    <option selected="" disabled>-- Select Categorie --</option>
+                                    <option selected="" disabled>-- Select Category --</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}" {{ old('category_id', $product->category_id) == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
                                     @endforeach
@@ -72,9 +72,9 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="supplier_id">Fournisseur <span class="text-danger">*</span></label>
+                                <label for="supplier_id">Supplier <span class="text-danger">*</span></label>
                                 <select class="form-control" name="supplier_id" required>
-                                    <option selected="" disabled>-- Select Fournisseur --</option>
+                                    <option selected="" disabled>-- Select Supplier --</option>
                                     @foreach ($suppliers as $supplier)
                                         <option value="{{ $supplier->id }}" {{ old('supplier_id', $product->supplier_id) == $supplier->id ? 'selected' : '' }}>{{ $supplier->name }}</option>
                                     @endforeach
@@ -104,7 +104,7 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="buying_date">Date d'achat</label>
+                                <label for="buying_date">Pay date</label>
                                 <input id="buying_date" class="form-control @error('buying_date') is-invalid @enderror" name="buying_date" value="{{ old('buying_date', $product->buying_date) }}" />
                                 @error('buying_date')
                                 <div class="invalid-feedback">
@@ -113,7 +113,7 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="expire_date">Date d'expiration</label>
+                                <label for="expire_date">Expire date</label>
                                 <input id="expire_date" class="form-control @error('expire_date') is-invalid @enderror" name="expire_date" value="{{ old('expire_date', $product->expire_date) }}" />
                                 @error('expire_date')
                                 <div class="invalid-feedback">
@@ -122,7 +122,7 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="buying_price">Prix d'achat <span class="text-danger">*</span></label>
+                                <label for="buying_price">Buying Price <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('buying_price') is-invalid @enderror" id="buying_price" name="buying_price" value="{{ old('buying_price', $product->buying_price) }}" required>
                                 @error('buying_price')
                                 <div class="invalid-feedback">
@@ -142,8 +142,8 @@
                         </div>
                         <!-- end: Input Data -->
                         <div class="mt-2">
-                            <button type="submit" class="btn btn-primary mr-2">Enregister</button>
-                            <a class="btn bg-danger" href="{{ route('products.index') }}">Annuler</a>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                            <a class="btn bg-danger" href="{{ route('products.index') }}">Cancel</a>
                         </div>
                     </form>
                 </div>

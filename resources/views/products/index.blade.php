@@ -22,13 +22,13 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Liste des produits</h4>
+                    <h4 class="mb-3">Products</h4>
                     <p class="mb-0"></p>
                 </div>
                 <div>
-                <a href="{{ route('products.importView') }}" class="btn btn-success add-list">Importer</a>
-                <a href="{{ route('products.exportData') }}" class="btn btn-warning add-list">Exporter</a>
-                <a href="{{ route('products.create') }}" class="btn btn-primary add-list">Ajouter un produit</a>
+                <a href="{{ route('products.importView') }}" class="btn btn-success add-list">Import</a>
+                <a href="{{ route('products.exportData') }}" class="btn btn-warning add-list">Export</a>
+                <a href="{{ route('products.create') }}" class="btn btn-primary add-list">Add Product</a>
                 </div>
             </div>
         </div>
@@ -69,10 +69,10 @@
                         <tr class="ligth ligth-data">
                             <th>No.</th>
                             <th>Photo</th>
-                            <th>@sortablelink('product_name', 'nom')</th>
-                            <th>@sortablelink('category.name', 'categorie')</th>
-                            <th>@sortablelink('supplier.name', 'fournisseur')</th>
-                            <th>@sortablelink('selling_price', 'prix')</th>
+                            <th>@sortablelink('product_name', 'name')</th>
+                            <th>@sortablelink('category.name', 'category')</th>
+                            <th>@sortablelink('supplier.name', 'Supplier')</th>
+                            <th>@sortablelink('selling_price', 'price')</th>
                             <th>Statut</th>
                             <th>Action</th>
                         </tr>
@@ -114,7 +114,7 @@
 
                         @empty
                         <div class="alert text-white bg-danger" role="alert">
-                            <div class="iq-alert-text">Aucun produit trouvé.</div>
+                            <div class="iq-alert-text">No Product found.</div>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <i class="ri-close-line"></i>
                             </button>
