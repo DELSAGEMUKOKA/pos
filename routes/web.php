@@ -32,7 +32,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('lang/change', [LangTransControlle::class, 'change'])->name('changeLang');
 // DEFAULT DASHBOARD & PROFILE
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');

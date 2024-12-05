@@ -38,6 +38,20 @@
                                 </form>
                             </div>
                         </li>
+                        <li class="nav-item nav-icon dropdown caption-content mr-4">
+                            
+                                <div >
+                                    <strong>Select Language: </strong>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-select changeLang">
+                                        <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+                                        <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>France</option>
+                                        <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Spanish</option>
+                                    </select>
+                                </div>
+                            
+                        </li>
                         <li class="nav-item nav-icon dropdown caption-content">
                             <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton4"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
