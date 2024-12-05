@@ -14,7 +14,7 @@ class Pos extends Component
 {
     use WithPagination, WithoutUrlPagination;
 
-
+    public string $name;
 
     public function render()
     {
