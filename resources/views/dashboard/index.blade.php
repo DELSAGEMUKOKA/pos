@@ -17,7 +17,7 @@
             <div class="card card-transparent card-block card-stretch card-height border-none">
                 <div class="card-body p-0 mt-lg-2 mt-0">
                     <h3 class="mb-3">Hello {{ auth()->user()->name }}, Bonjour</h3>
-                    <p class="mb-0 mr-4">Observez la performance des vos affaires.</p>
+                    <p class="mb-0 mr-4">Observe the performance of your affaires.</p>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                                     <img src="../assets/images/product/1.png" class="img-fluid" alt="image">
                                 </div>
                                 <div>
-                                    <p class="mb-2">Total Payé</p>
+                                    <p class="mb-2">Total Paid</p>
                                     <h4>$ {{ $total_paid }}</h4>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                                     <img src="../assets/images/product/2.png" class="img-fluid" alt="image">
                                 </div>
                                 <div>
-                                    <p class="mb-2">Total Dette</p>
+                                    <p class="mb-2">Total Due</p>
                                     <h4>$ {{ $total_due }}</h4>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                                     <img src="../assets/images/product/3.png" class="img-fluid" alt="image">
                                 </div>
                                 <div>
-                                    <p class="mb-2">Commandes Completes</p>
+                                    <p class="mb-2">Order Complete</p>
                                     <h4>{{ count($complete_orders) }}</h4>
                                 </div>
                             </div>
@@ -96,9 +96,9 @@
                             </span>
                             <div class="dropdown-menu dropdown-menu-right shadow-none"
                                 aria-labelledby="dropdownMenuButton001">
-                                <a class="dropdown-item" href="#">Année</a>
-                                <a class="dropdown-item" href="#">Mois</a>
-                                <a class="dropdown-item" href="#">Semaine</a>
+                                <a class="dropdown-item" href="#">Year</a>
+                                <a class="dropdown-item" href="#">Month</a>
+                                <a class="dropdown-item" href="#">Week</a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
             <div class="card card-block card-stretch card-height">
                 <div class="card-header d-flex align-items-center justify-content-between">
                     <div class="header-title">
-                        <h4 class="card-title">Revenu Vs Coût</h4>
+                        <h4 class="card-title">Revenue Vs Cost</h4>
                     </div>
                     <div class="card-header-toolbar d-flex align-items-center">
                         <div class="dropdown">
@@ -122,9 +122,9 @@
                             </span>
                             <div class="dropdown-menu dropdown-menu-right shadow-none"
                                 aria-labelledby="dropdownMenuButton002">
-                                <a class="dropdown-item" href="#">Annuel</a>
-                                <a class="dropdown-item" href="#">Mensuel</a>
-                                <a class="dropdown-item" href="#">Hebdomadaire</a>
+                                <a class="dropdown-item" href="#">Annual</a>
+                                <a class="dropdown-item" href="#">Monthly</a>
+                                <a class="dropdown-item" href="#">Weekly</a>
                             </div>
                         </div>
                     </div>
@@ -149,9 +149,9 @@
                             </span>
                             <div class="dropdown-menu dropdown-menu-right shadow-none"
                                 aria-labelledby="dropdownMenuButton006">
-                                <a class="dropdown-item" href="#">Année</a>
-                                <a class="dropdown-item" href="#">Mois</a>
-                                <a class="dropdown-item" href="#">Semaine</a>
+                                <a class="dropdown-item" href="#">Annual</a>
+                                <a class="dropdown-item" href="#">Monthly</a>
+                                <a class="dropdown-item" href="#">Weekly</a>
                             </div>
                         </div>
                     </div>
@@ -181,10 +181,10 @@
             <div class="card card-transparent card-block card-stretch mb-4">
                 <div class="card-header d-flex align-items-center justify-content-between p-0">
                     <div class="header-title">
-                        <h4 class="card-title mb-0">Nouveaux produits</h4>
+                        <h4 class="card-title mb-0">New Products</h4>
                     </div>
                     <div class="card-header-toolbar d-flex align-items-center">
-                        <div><a href="#" class="btn btn-primary view-btn font-size-14">Voir tout</a></div>
+                        <div><a href="#" class="btn btn-primary view-btn font-size-14">See more</a></div>
                     </div>
                 </div>
             </div>

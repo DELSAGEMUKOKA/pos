@@ -27,13 +27,13 @@ class AdvanceSalaryController extends Controller
             abort(400, 'The per-page parameter must be an integer between 1 and 100.');
         }
 
-        // if(request('search')){
-        //     Employee::firstWhere('name', request('search'));
-        // }
+        if(request('search')){
+            Employee::firstWhere('name', request('search'));
+        }
 
         return view('advance-salary.index', [
             'advance_salaries' => $this->advanceSalaryService
-                ->advancedSalaryWithEmployee(request(["search"]), $row),
+                ->advancedSalaryWithEmployee(request("search"), $row),
         ]);
     }
 

@@ -18,8 +18,8 @@
                     <p class="mb-0"></p>
                 </div>
                 <div>
-                <a href="{{ route('employees.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Ajouter un employé</a>
-                <a href="{{ route('employees.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>Effacer la recherche</a>
+                <a href="{{ route('employees.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>create an employee</a>
+                <a href="{{ route('employees.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>cancel search</a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">recherche:</label>
+                        <label class="control-label col-sm-3 align-self-center" for="search">search:</label>
                         <div class="col-sm-8">
                             <div class="input-group">
                                 <input type="text" id="search" class="form-control" name="search" placeholder="Search employee" value="{{ request('search') }}">
@@ -62,11 +62,11 @@
                         <tr class="ligth ligth-data">
                             <th>No.</th>
                             <th>Photo</th>
-                            <th>@sortablelink('name','nom')</th>
+                            <th>@sortablelink('name','name')</th>
                             <th>@sortablelink('email', )</th>
-                            <th>@sortablelink('phone','telephone')</th>
-                            <th>@sortablelink('salary','salaire')</th>
-                            <th>@sortablelink('city','cité')</th>
+                            <th>@sortablelink('phone','phone')</th>
+                            <th>@sortablelink('salary','salary')</th>
+                            <th>@sortablelink('city','city')</th>
                             <th>Action</th>
                         </tr>
                     </thead>

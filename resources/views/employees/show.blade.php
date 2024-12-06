@@ -67,7 +67,7 @@
             <div class="card card-block card-stretch mb-0">
                 <div class="card-header px-3">
                     <div class="header-title">
-                        <h4 class="card-title">Information sur l'employé</h4>
+                        <h4 class="card-title">Information </h4>
                     </div>
                 </div>
                 <div class="card-body p-3">
@@ -75,7 +75,7 @@
                         <li class="col-lg-12">
                             <div class="form-group row">
                                 <div class="col-sm-3 col-4">
-                                    <label class="col-form-label">Nom</label>
+                                    <label class="col-form-label">name</label>
                                 </div>
                                 <div class="col-sm-9 col-8">
                                     <input type="text" class="form-control bg-white" value="{{ $employee->name }}" readonly>
@@ -95,7 +95,7 @@
                         <li class="col-lg-12">
                             <div class="form-group row">
                                 <div class="col-sm-3 col-4">
-                                    <label class="col-form-label">Téléphone</label>
+                                    <label class="col-form-label">phone</label>
                                 </div>
                                 <div class="col-sm-9 col-8">
                                     <input type="text" class="form-control bg-white" value="{{ $employee->phone }}" readonly>
@@ -116,7 +116,7 @@
                         <li class="col-lg-12">
                             <div class="form-group row">
                                 <div class="col-sm-3 col-4">
-                                    <label class="col-form-label">Salaire</label>
+                                    <label class="col-form-label">Salary</label>
                                 </div>
                                 <div class="col-sm-9 col-8">
                                     <input type="text" class="form-control bg-white" value="${{ $employee->salary }}" readonly>
@@ -126,7 +126,7 @@
                         <li class="col-lg-12">
                             <div class="form-group row">
                                 <div class="col-sm-3 col-4">
-                                    <label class="col-form-label">poste</label>
+                                    <label class="col-form-label">Vacation</label>
                                 </div>
                                 <div class="col-sm-9 col-8">
                                     <input type="text" class="form-control bg-white" value="{{ $employee->vacation }}" readonly>
@@ -136,7 +136,7 @@
                         <li class="col-lg-12">
                             <div class="form-group row">
                                 <div class="col-sm-3 col-4">
-                                    <label class="col-form-label">ville</label>
+                                    <label class="col-form-label">City</label>
                                 </div>
                                 <div class="col-sm-9 col-8">
                                     <input type="text" class="form-control bg-white" value="{{ $employee->city }}" readonly>
@@ -146,7 +146,7 @@
                         <li class="col-lg-12">
                             <div class="form-group row">
                                 <div class="col-sm-3 col-4">
-                                    <label class="col-form-label">Adresse</label>
+                                    <label class="col-form-label">Adress</label>
                                 </div>
                                 <div class="col-sm-9 col-8">
                                     <textarea class="form-control bg-white" readonly>{{ $employee->address }}</textarea>

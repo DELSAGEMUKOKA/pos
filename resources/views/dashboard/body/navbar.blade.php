@@ -38,7 +38,7 @@
                                 </form>
                             </div>
                         </li>
-                        <li class="nav-item nav-icon dropdown caption-content mr-4">
+                        {{-- <li class="nav-item nav-icon dropdown caption-content mr-4">
                             
                                 <div >
                                     <strong>Select Language: </strong>
@@ -51,7 +51,7 @@
                                     </select>
                                 </div>
                             
-                        </li>
+                        </li> --}}
                         <li class="nav-item nav-icon dropdown caption-content">
                             <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton4"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
