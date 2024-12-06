@@ -33,7 +33,7 @@ class AdvanceSalaryController extends Controller
 
         return view('advance-salary.index', [
             'advance_salaries' => $this->advanceSalaryService
-                ->advancedSalaryWithEmployee(request("search"), $row),
+                ->advancedSalaryWithEmployee(request(["search"]), $row),
         ]);
     }
 

@@ -13,11 +13,7 @@ class AdvanceSalaryService {
             ->get();
     }
 
-    public function advanceSalaryById(int $advancedId){
-
-    }
-
-    public function advancedSalaryWithEmployee(string $searchWords, $row) {
+    public function advancedSalaryWithEmployee( $searchWords, $row) {
      return   AdvanceSalary::with(['employee'])
                 ->orderByDesc('date')
                 ->filter($searchWords)
@@ -28,10 +24,11 @@ class AdvanceSalaryService {
 
     public function advanceSalaryCreate($data) : void {
         AdvanceSalary::create(
-[
+        [
         'employee_id' => $data->employee_id,
         'date' => $data->date,
-        'advance_salary' => $data->advance_salary]
+        'advance_salary' => $data->advance_salary
+        ]
         );
     }
 

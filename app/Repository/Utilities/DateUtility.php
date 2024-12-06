@@ -7,11 +7,9 @@ namespace App\Repository\Utilities;
 use Illuminate\Support\Carbon;
 
 class DateUtility {
-    public function newDate(string $newdate){
-       return Carbon::createFromFormat('Y-m-d', $newdate)->format('Y-m');
+
+    public function newDate(string $data){
+       return Carbon::createFromFormat('Y-m-d', $data)->format('Y-m');
     }
 
-    public function oldDate($Adv){
-
-    }
 }
