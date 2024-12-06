@@ -22,9 +22,9 @@ class AdvanceSalaryRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'employee_id' => 'required',
+            'employee_id' => 'required,',
             'date' => 'required|date_format:Y-m-d|max:10',
-            'advance_salary' => 'numeric|nullable'
+            'advance_salary' => 'numeric|nullable',
         ];
     }
 }
