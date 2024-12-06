@@ -52,7 +52,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="datepicker">Date <span class="text-danger">*</span></label>
-                                <input id="datepicker" class="form-control @error('date') is-invalid @enderror" name="date" value="{{ old('date') }}" />
+                                <input id="datepicker" type="date" class="form-control @error('date') is-invalid @enderror" name="date" value="{{ old('date') }}" />
                                 @error('date')
                                 <div class="invalid-feedback">
                                     {{ $message }}
