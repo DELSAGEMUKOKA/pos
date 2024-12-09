@@ -38,20 +38,22 @@
                                 </form>
                             </div>
                         </li>
-                        {{-- <li class="nav-item nav-icon dropdown caption-content mr-4">
+                       <li class="nav-item nav-icon dropdown caption-content mr-4">
                             
-                                <div >
-                                    <strong>Select Language: </strong>
+                               <div class="dropdown mr-4">
+                                <button class="btn btn-bd-1 dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                            {{ __('select a language')}}
+                                        </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">After divider action</a>
                                 </div>
-                                <div class="col-md-4">
-                                    <select class="form-select changeLang">
-                                        <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-                                        <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>France</option>
-                                        <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Spanish</option>
-                                    </select>
-                                </div>
+                               </div>
                             
-                        </li> --}}
+                        </li> 
                         <li class="nav-item nav-icon dropdown caption-content">
                             <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton4"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

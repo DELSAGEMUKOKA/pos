@@ -16,7 +16,7 @@ use App\Http\Controllers\Dashboard\OrderController;
 use App\Http\Controllers\Dashboard\PosController;
 use App\Http\Controllers\Dashboard\RoleController;
 use App\Http\Controllers\Dashboard\UserController;
-
+use App\Http\Controllers\LangTransController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,7 +32,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('lang/change', [LangTransControlle::class, 'change'])->name('changeLang');
+Route::get("lang/{locale}",function($locale) {
+    app()->setLocale($locale);
+    session()->put('locale',$locale);
+    return redirect()->back();
+});
+
 // DEFAULT DASHBOARD & PROFILE
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
