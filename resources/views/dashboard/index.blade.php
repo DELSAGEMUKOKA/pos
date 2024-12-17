@@ -16,11 +16,12 @@
         <div class="col-lg-4">
             <div class="card card-transparent card-block card-stretch card-height border-none">
                 <div class="card-body p-0 mt-lg-2 mt-0">
-                    <h3 class="mb-3">Hello {{ auth()->user()->name }}</h3>
-                    <p class="mb-0 mr-4">{{ __('Observe the performance of your affaires.') }}</p>
+                    <h3 class="mb-3">{{ __('Hello')}} {{ auth()->user()->name }}</h3>
+                    <p class="mb-0 mr-4">{{ __('Observe the performance of your affaires') }}</p>
                 </div>
             </div>
         </div>
+    
         <div class="col-lg-8">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
@@ -69,7 +70,7 @@
                                     <img src="../assets/images/product/3.png" class="img-fluid" alt="image">
                                 </div>
                                 <div>
-                                    <p class="mb-2">Order Complete</p>
+                                    <p class="mb-2">{{__('Order Complete')}} </p>
                                     <h4>{{ count($complete_orders) }}</h4>
                                 </div>
                             </div>

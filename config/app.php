@@ -96,7 +96,7 @@ return [
     */
 
     'fallback_locale' => 'en',
-    'avalaible_locales' => [
+    'available_locales' => [
         'English' => 'en',
         'French'  => 'fr'
     ],

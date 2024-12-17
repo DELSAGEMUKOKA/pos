@@ -40,18 +40,7 @@
                         </li>
                        <li class="nav-item nav-icon dropdown caption-content mr-4">
                             
-                               <div class="dropdown mr-4">
-                                <button class="btn btn-bd-1 dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                            {{ __('select a language')}}
-                                        </button>
-                                <div class="dropdown-menu" aria-labelledby="triggerId">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item disabled" href="#">Disabled action</a>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">After divider action</a>
-                                </div>
-                               </div>
+                      @include("components.launguages")
                             
                         </li> 
                         <li class="nav-item nav-icon dropdown caption-content">
