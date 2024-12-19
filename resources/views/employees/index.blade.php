@@ -14,12 +14,12 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Liste des employés</h4>
+                    <h4 class="mb-3">{{__("Liste des employés")}} </h4>
                     <p class="mb-0"></p>
                 </div>
                 <div>
-                <a href="{{ route('employees.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>create an employee</a>
-                <a href="{{ route('employees.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>cancel search</a>
+                <a href="{{ route('employees.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>{{__('Create')}} {{__("employee")}} </a>
+                <a href="{{ route('employees.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i></a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">search:</label>
+                        <label class="control-label col-sm-3 align-self-center" for="search">{{__("search")}}:</label>
                         <div class="col-sm-8">
                             <div class="input-group">
                                 <input type="text" id="search" class="form-control" name="search" placeholder="Search employee" value="{{ request('search') }}">

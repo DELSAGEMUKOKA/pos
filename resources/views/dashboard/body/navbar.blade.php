@@ -61,10 +61,10 @@
                                             <h5 class="mb-1">{{  auth()->user()->name }}</h5>
                                             <p class="mb-0">Since {{ date('d M, Y', strtotime(auth()->user()->created_at)) }}</p>
                                             <div class="d-flex align-items-center justify-content-center mt-3">
-                                                <a href="{{ route('profile') }}" class="btn border mr-2">Profile</a>
+                                                <a href="{{ route('profile') }}" class="btn border mr-2"> {{__('Profile')}} </a>
                                                 <form action="{{ route('logout') }}" method="POST">
                                                     @csrf
-                                                    <button type="submit" class="btn border">Sign Out</button>
+                                                    <button type="submit" class="btn border">{{__('Sign Out')}}</button>
                                                 </form>
                                             </div>
                                         </div>

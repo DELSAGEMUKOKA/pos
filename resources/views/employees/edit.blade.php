@@ -43,7 +43,7 @@
                         <!-- begin: Input Data -->
                         <div class=" row align-items-center">
                             <div class="form-group col-md-12">
-                                <label for="name"> Name <span class="text-danger">*</span></label>
+                                <label for="name"> {{__("Name")}} <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name', $employee->name) }}" required>
                                 @error('name')
                                 <div class="invalid-feedback">
@@ -61,7 +61,7 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="phone"> Phone <span class="text-danger">*</span></label>
+                                <label for="phone"> {{__('Phone')}} <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone" value="{{ old('phone', $employee->phone) }}" required>
                                 @error('phone')
                                 <div class="invalid-feedback">
@@ -81,7 +81,7 @@
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="salary"> salary <span class="text-danger">*</span></label>
+                                <label for="salary"> {{__('salary')}} <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('salary') is-invalid @enderror" id="salary" name="salary" value="{{ old('salary', $employee->salary) }}" required>
                                 @error('salary')
                                 <div class="invalid-feedback">
@@ -90,7 +90,7 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="vacation"> vacation </label>
+                                <label for="vacation"> {{__('vacation')}} </label>
                                 <input type="text" class="form-control @error('vacation') is-invalid @enderror" id="vacation" name="vacation" value="{{ old('vacation') }}">
                                 @error('vacation')
                                 <div class="invalid-feedback">
@@ -99,7 +99,7 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="city"> city <span class="text-danger">*</span></label>
+                                <label for="city"> {{__("city")}} <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('city') is-invalid @enderror" id="city" name="city" value="{{ old('city', $employee->city) }}" required>
                                 @error('city')
                                 <div class="invalid-feedback">

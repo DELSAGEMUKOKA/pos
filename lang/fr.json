@@ -1,8 +1,8 @@
 {
  "Observe the performance of your affaires" : "observez les performances de vos affaires",
  "add" : "ajouter",
- "create" : "créer",
- "cancel" : "annuler",
+ "Create" : "créer",
+ "Cancel" : "annuler",
  "Products" : "produits",
  "select a language" : "selectionnez une langue",
  "hello" : "bonjour",
@@ -16,7 +16,19 @@
  "Total Paid" : "total payé",
  "Total Due" : "total dette",
  "French" : "Français",
- "English" : "Anglais"
+ "English" : "Anglais",
+ "profile" : "Profil",
+ "Sign Out": "Déconnexion",
+ "employee" : "Employé",
+ "a" : "un",
+ "search" : "recherche",
+ "Email" : "email",
+ "Phone" : "Téléphone",
+ "Name" : "nom",
+ "List of employees" : "Liste des employés",
+ "Address" : "adresse",
+ "Vacation" : "Poste"
+  
 }
    
     
