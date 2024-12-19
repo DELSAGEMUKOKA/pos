@@ -220,7 +220,7 @@
                 <li class="{{ Request::is('users*') ? 'active' : '' }}">
                     <a href="{{ route('users.index') }}" class="svg-icon">
                         <i class="fa-solid fa-users"></i>
-                        <span class="ml-3"> </span>
+                        <span class="ml-3">{{__('Users')}} </span>
                     </a>
                 </li>
                 @endif
