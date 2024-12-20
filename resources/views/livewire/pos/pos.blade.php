@@ -12,7 +12,7 @@
                 </div>
                 @endif
                 <div>
-                    <h4 class="mb-3">Point Of sale</h4>
+                    <h4 class="mb-3">{{__("Point Of sale")}} </h4>
                 </div>
             </div>
 
@@ -20,10 +20,10 @@
                 <table class="table">
                     <thead>
                         <tr class="ligth">
-                            <th scope="col">Name</th>
-                            <th scope="col">Qty</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Sub-Total</th>
+                            <th scope="col">{{__('Name')}} </th>
+                            <th scope="col">{{__('Qty')}} </th>
+                            <th scope="col">{{__("Price")}} </th>
+                            <th scope="col">{{__('Sub-Total')}} </th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -63,13 +63,13 @@
 
                 <div class="container row text-center">
                     <div class="form-group col-sm-6">
-                        <p class="h4 text-primary">Quantity: {{ Cart::count() }}</p>
+                        <p class="h4 text-primary">{{__('Quantity')}}: {{ Cart::count() }}</p>
                     </div>
                     <div class="form-group col-sm-6">
-                        <p class="h4 text-primary">Subtotal: {{ Cart::subtotal() }}</p>
+                        <p class="h4 text-primary">{{__("Subtotal")}}: {{ Cart::subtotal() }}</p>
                     </div>
                     <div class="form-group col-sm-6">
-                        <p class="h4 text-primary">Vat: {{ Cart::tax() }}</p>
+                        <p class="h4 text-primary">{{__("Vat")}} : {{ Cart::tax() }}</p>
                     </div>
                     <div class="form-group col-sm-6">
                         <p class="h4 text-primary">Total: {{ Cart::total() }}</p>
@@ -99,8 +99,8 @@
                         </div>
                         <div class="col-md-12 mt-4">
                             <div class="d-flex flex-wrap align-items-center justify-content-center">
-                                <a href="{{ route('customers.create') }}" class="btn btn-primary add-list mx-1">create customer</a>
-                                <button type="submit" class="btn btn-success add-list mx-1">Create invoice</button>
+                                <a href="{{ route('customers.create') }}" class="btn btn-primary add-list mx-1">{{__('create customer')}} </a>
+                                <button type="submit" class="btn btn-success add-list mx-1">{{__("Create invoice")}} </button>
                             </div>
                         </div>
                     </div>

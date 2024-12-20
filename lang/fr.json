@@ -27,7 +27,17 @@
  "Name" : "nom",
  "List of employees" : "Liste des employés",
  "Address" : "adresse",
- "Vacation" : "Poste"
+ "Vacation" : "Poste",
+ "create customer" : "Ajouter un client",
+ "Create Invoice" : "Génerer la facture",
+ "Price" : "prix",
+ "Qty" : "Qté",
+ "Sub-Total" : "Sous-Total",
+ "Quantity" : "Quantité",
+ "Subtotal" : "Sous-total",
+ "Vat" : "Tax",
+ "select client" : "selectionnez un client",
+ "Point Of sale" : "Point de vente"
   
 }
    
